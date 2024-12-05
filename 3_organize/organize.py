@@ -11,7 +11,7 @@ with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
     csv_writer = csv.writer(csvfile)
 
     # เขียนหัวตาราง
-    header = ["Year","Bibrecord Country", "Bibrecord City", "faculty","Bibrecord Organization"]# "Title"
+    header = ["Year","Bibrecord Country", "Bibrecord City", "Faculty","Bibrecord Organization"]# "Title"
     csv_writer.writerow(header)
 
     # วนลูปปี 2018-2023
