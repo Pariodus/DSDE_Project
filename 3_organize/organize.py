@@ -15,7 +15,7 @@ with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
     csv_writer.writerow(header)
 
     # วนลูปปี 2018-2023
-    for year in range(2018, 2019):
+    for year in range(2018, 2024):
         folder_path = os.path.join(base_folder, str(year))
         
         # ตรวจสอบว่าโฟลเดอร์นั้นมีอยู่หรือไม่
