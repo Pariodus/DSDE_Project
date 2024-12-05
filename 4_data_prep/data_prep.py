@@ -91,7 +91,6 @@ def group_faculty(faculty):
     if re.search(r'political', faculty, re.IGNORECASE):      #รัดสาด
         return 'Faculty of Political Science'
     
-    
 # Clean the 'Faculty' column
 df['Faculty'] = df['Faculty'].apply(clean_faculty_name)
 df['Faculty'] = df['Faculty'].apply(group_faculty)
@@ -101,9 +100,7 @@ df['Faculty'] = df['Faculty'].apply(group_faculty)
 grouped_df = df.groupby(['Year', 'Faculty']).size().reset_index(name='Count')
 
 # Save the cleaned and grouped data to a new CSV file
-grouped_df.to_csv("cleaned_grouped_year_faculty.csv", index=False)
+grouped_df.to_csv("4_data_prep/data_prep.csv", index=False)
 
 # Display the result
 print(grouped_df.info())
-
-
