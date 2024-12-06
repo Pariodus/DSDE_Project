@@ -4,6 +4,7 @@ import pandas as pd
 df1 = pd.read_csv('2_scaping/filter_transpose.csv')
 df2 = pd.read_csv('4_data_prep(spark)/spark.csv')
 # Concatenate the DataFrames
+
 concatenated_data = pd.concat([df1, df2])
 concatenated_data.dropna(inplace=True)
 
