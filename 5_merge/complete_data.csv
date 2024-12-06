@@ -1,0 +1,315 @@
+Year,Faculty,Count
+2013.0,College of Population Studies,12
+2013.0,College of Public Health Sciences,49
+2013.0,Faculty of Allied Health Sciences,14
+2013.0,Faculty of Architecture,86
+2013.0,Faculty of Arts,93
+2013.0,Faculty of Commerce and Accountancy,28
+2013.0,Faculty of Communication Arts,58
+2013.0,Faculty of Dentistry,31
+2013.0,Faculty of Economics,44
+2013.0,Faculty of Education,226
+2013.0,Faculty of Engineering,401
+2013.0,Faculty of Communication Arts,46
+2013.0,Faculty of Law,54
+2013.0,Faculty of Medicine,133
+2013.0,Faculty of Nursing,97
+2013.0,Faculty of Phamaceutical Science,74
+2013.0,Faculty of Political Science,56
+2013.0,Faculty of Psychology,50
+2013.0,Faculty of Science,336
+2013.0,Faculty of Sports Science,51
+2013.0,Faculty of Veterinary Science,29
+2013.0,Graduate School,202
+2013.0,Office of Research Affairs,0
+2013.0,Institute of Asian Studies,1
+2013.0,The Institute of Biotechnology and Genetic Engineering,9
+2013.0,Institute of Thai Studies,0
+2013.0,Language Institute,0
+2013.0,Office of Academic Resources,5
+2013.0,The Petroleum and Petrochemical College,92
+2013.0,Sasin Graduate Institute of Business Administration,0
+2014.0,College of Population Studies,10
+2014.0,College of Public Health Sciences,41
+2014.0,Faculty of Allied Health Sciences,23
+2014.0,Faculty of Architecture,84
+2014.0,Faculty of Arts,95
+2014.0,Faculty of Commerce and Accountancy,38
+2014.0,Faculty of Communication Arts,58
+2014.0,Faculty of Dentistry,23
+2014.0,Faculty of Economics,46
+2014.0,Faculty of Education,272
+2014.0,Faculty of Engineering,375
+2014.0,Faculty of Communication Arts,48
+2014.0,Faculty of Law,80
+2014.0,Faculty of Medicine,118
+2014.0,Faculty of Nursing,102
+2014.0,Faculty of Phamaceutical Science,50
+2014.0,Faculty of Political Science,56
+2014.0,Faculty of Psychology,55
+2014.0,Faculty of Science,443
+2014.0,Faculty of Sports Science,42
+2014.0,Faculty of Veterinary Science,41
+2014.0,Graduate School,159
+2014.0,Office of Research Affairs,0
+2014.0,Institute of Asian Studies,0
+2014.0,The Institute of Biotechnology and Genetic Engineering,9
+2014.0,Institute of Thai Studies,0
+2014.0,Language Institute,0
+2014.0,Office of Academic Resources,5
+2014.0,The Petroleum and Petrochemical College,112
+2014.0,Sasin Graduate Institute of Business Administration,0
+2015.0,College of Population Studies,12
+2015.0,College of Public Health Sciences,40
+2015.0,Faculty of Allied Health Sciences,17
+2015.0,Faculty of Architecture,115
+2015.0,Faculty of Arts,102
+2015.0,Faculty of Commerce and Accountancy,38
+2015.0,Faculty of Communication Arts,38
+2015.0,Faculty of Dentistry,35
+2015.0,Faculty of Economics,32
+2015.0,Faculty of Education,236
+2015.0,Faculty of Engineering,414
+2015.0,Faculty of Communication Arts,41
+2015.0,Faculty of Law,80
+2015.0,Faculty of Medicine,129
+2015.0,Faculty of Nursing,114
+2015.0,Faculty of Phamaceutical Science,58
+2015.0,Faculty of Political Science,34
+2015.0,Faculty of Psychology,65
+2015.0,Faculty of Science,406
+2015.0,Faculty of Sports Science,39
+2015.0,Faculty of Veterinary Science,42
+2015.0,Graduate School,141
+2015.0,Office of Research Affairs,0
+2015.0,Institute of Asian Studies,1
+2015.0,The Institute of Biotechnology and Genetic Engineering,7
+2015.0,Institute of Thai Studies,0
+2015.0,Language Institute,1
+2015.0,Office of Academic Resources,1
+2015.0,The Petroleum and Petrochemical College,86
+2015.0,Sasin Graduate Institute of Business Administration,0
+2016.0,College of Population Studies,1
+2016.0,College of Public Health Sciences,47
+2016.0,Faculty of Allied Health Sciences,16
+2016.0,Faculty of Architecture,2
+2016.0,Faculty of Arts,9
+2016.0,Faculty of Commerce and Accountancy,15
+2016.0,Faculty of Communication Arts,0
+2016.0,Faculty of Dentistry,29
+2016.0,Faculty of Economics,13
+2016.0,Faculty of Education,13
+2016.0,Faculty of Engineering,121
+2016.0,Faculty of Communication Arts,1
+2016.0,Faculty of Law,1
+2016.0,Faculty of Medicine,29
+2016.0,Faculty of Nursing,4
+2016.0,Faculty of Phamaceutical Science,35
+2016.0,Faculty of Political Science,6
+2016.0,Faculty of Psychology,11
+2016.0,Faculty of Science,233
+2016.0,Faculty of Sports Science,1
+2016.0,Faculty of Veterinary Science,29
+2016.0,Graduate School,68
+2016.0,Office of Research Affairs,0
+2016.0,Institute of Asian Studies,0
+2016.0,The Institute of Biotechnology and Genetic Engineering,1
+2016.0,Institute of Thai Studies,0
+2016.0,Language Institute,1
+2016.0,Office of Academic Resources,0
+2016.0,The Petroleum and Petrochemical College,4
+2016.0,Sasin Graduate Institute of Business Administration,0
+2017.0,College of Population Studies,6
+2017.0,College of Public Health Sciences,55
+2017.0,Faculty of Allied Health Sciences,19
+2017.0,Faculty of Architecture,81
+2017.0,Faculty of Arts,74
+2017.0,Faculty of Commerce and Accountancy,28
+2017.0,Faculty of Communication Arts,43
+2017.0,Faculty of Dentistry,38
+2017.0,Faculty of Economics,32
+2017.0,Faculty of Education,198
+2017.0,Faculty of Engineering,297
+2017.0,Faculty of Communication Arts,57
+2017.0,Faculty of Law,101
+2017.0,Faculty of Medicine,134
+2017.0,Faculty of Nursing,89
+2017.0,Faculty of Phamaceutical Science,44
+2017.0,Faculty of Political Science,37
+2017.0,Faculty of Psychology,25
+2017.0,Faculty of Science,374
+2017.0,Faculty of Sports Science,42
+2017.0,Faculty of Veterinary Science,37
+2017.0,Graduate School,92
+2017.0,Office of Research Affairs,0
+2017.0,Institute of Asian Studies,1
+2017.0,The Institute of Biotechnology and Genetic Engineering,0
+2017.0,Institute of Thai Studies,0
+2017.0,Language Institute,0
+2017.0,Office of Academic Resources,1
+2017.0,The Petroleum and Petrochemical College,24
+2017.0,Sasin Graduate Institute of Business Administration,0
+2018.0,Graduate School,73
+2020.0,Social Research Institute,3
+2018.0,Faculty of Pharmaceutical Science,52
+2019.0,Faculty of Science,308
+2018.0,Faculty of Arts,1
+2020.0,The Halal Science Center,1
+2023.0,Faculty of Education,6
+2021.0,College of Public Health Sciences,29
+2021.0,Faculty of Engineering,186
+2022.0,Energy Research Institute,8
+2020.0,Faculty of Sports Science,1
+2023.0,Social Research Institute,2
+2022.0,Faculty of Dentistry,82
+2018.0,The Halal Science Center,1
+2020.0,Sasin Graduate Institute of Business Administration,5
+2021.0,Graduate School,92
+2018.0,Social Research Institute,1
+2023.0,Faculty of Law,1
+2019.0,Faculty of Nursing,5
+2019.0,Faculty of Pharmaceutical Science,63
+2019.0,College of Population Studies,2
+2021.0,Faculty of Architecture,2
+2023.0,Faculty of Science,260
+2022.0,Faculty of Law,1
+2023.0,Faculty of Engineering,180
+2023.0,Faculty of Commerce and Accountancy,13
+2019.0,Energy Research Institute,2
+2020.0,Faculty of Political Science,2
+2023.0,Sasin Graduate Institute of Business Administration,16
+2022.0,Faculty of Allied Health Sciences,39
+2022.0,Faculty of Arts,3
+2018.0,Faculty of Education,4
+2021.0,Faculty of Dentistry,57
+2021.0,The Petroleum and Petrochemical College,37
+2020.0,Graduate School,78
+2019.0,Faculty of Medicine,185
+2022.0,The Petroleum and Petrochemical College,46
+2022.0,Social Research Institute,4
+2021.0,Faculty of Veterinary Science,99
+2018.0,Transportation Institute,1
+2021.0,College of Population Studies,3
+2023.0,Faculty of Psychology,2
+2019.0,Faculty of Political Science,1
+2022.0,Faculty of Psychology,5
+2019.0,Faculty of Commerce and Accountancy,14
+2020.0,Faculty of Architecture,4
+2021.0,Faculty of Allied Health Sciences,39
+2021.0,Faculty of Nursing,11
+2020.0,Faculty of Veterinary Science,71
+2018.0,Faculty of Science,312
+2018.0,Faculty of Psychology,2
+2019.0,College of Public Health Sciences,20
+2021.0,Faculty of Economics,8
+2022.0,Faculty of Education,12
+2018.0,Faculty of Economics,5
+2019.0,Social Research Institute,5
+2019.0,Faculty of Allied Health Sciences,34
+2023.0,Faculty of Arts,1
+2022.0,College of Public Health Sciences,19
+2018.0,The Petroleum and Petrochemical College,43
+2023.0,College of Public Health Sciences,12
+2023.0,Faculty of Sports Science,3
+2023.0,The Petroleum and Petrochemical College,33
+2018.0,Faculty of Sports Science,3
+2023.0,Faculty of Economics,6
+2023.0,Faculty of Veterinary Science,56
+2020.0,Energy Research Institute,4
+2020.0,Faculty of Engineering,208
+2020.0,The Petroleum and Petrochemical College,39
+2019.0,Graduate School,73
+2021.0,Faculty of Arts,2
+2019.0,School of Agricultural Resources,1
+2019.0,Faculty of Arts,1
+2023.0,School of Agricultural Resources,4
+2023.0,The Halal Science Center,1
+2018.0,Faculty of Allied Health Sciences,14
+2018.0,Center of Excellence on Hazardous Substance Management,3
+2021.0,Sasin Graduate Institute of Business Administration,11
+2018.0,Faculty of Dentistry,47
+2020.0,Faculty of Economics,10
+2019.0,Faculty of Economics,8
+2020.0,Faculty of Science,310
+2020.0,Faculty of Medicine,217
+2022.0,Faculty of Commerce and Accountancy,18
+2022.0,College of Population Studies,5
+2023.0,Faculty of Allied Health Sciences,20
+2019.0,Faculty of Dentistry,40
+2020.0,Faculty of Psychology,3
+2023.0,Faculty of Pharmaceutical Science,58
+2019.0,Faculty of Sports Science,5
+2018.0,Faculty of Commerce and Accountancy,8
+2021.0,Social Research Institute,2
+2022.0,Institute of Asian Studies,2
+2019.0,Faculty of Engineering,170
+2018.0,Faculty of Engineering,154
+2022.0,Faculty of Science,351
+2018.0,School of Agricultural Resources,4
+2021.0,Faculty of Science,357
+2019.0,The Petroleum and Petrochemical College,44
+2022.0,Faculty of Pharmaceutical Science,112
+2022.0,Faculty of Sports Science,19
+2018.0,College of Population Studies,3
+2020.0,Faculty of Education,12
+2022.0,Center of Excellence on Hazardous Substance Management,1
+2023.0,Faculty of Architecture,4
+2020.0,Faculty of Pharmaceutical Science,67
+2020.0,Faculty of Nursing,7
+2021.0,Energy Research Institute,3
+2018.0,Faculty of Architecture,2
+2020.0,Institute of Asian Studies,3
+2021.0,Faculty of Fine and Applied Arts,1
+2021.0,Faculty of Psychology,8
+2021.0,Faculty of Political Science,3
+2022.0,Sasin Graduate Institute of Business Administration,17
+2021.0,Transportation Institute,3
+2020.0,School of Agricultural Resources,4
+2020.0,Center of Excellence on Hazardous Substance Management,5
+2020.0,Faculty of Dentistry,34
+2018.0,College of Public Health Sciences,34
+2021.0,Faculty of Pharmaceutical Science,93
+2022.0,Faculty of Economics,8
+2022.0,Faculty of Political Science,1
+2023.0,Faculty of Nursing,7
+2023.0,Faculty of Dentistry,68
+2019.0,Center of Excellence on Hazardous Substance Management,2
+2021.0,Faculty of Education,12
+2019.0,Faculty of Psychology,3
+2018.0,Faculty of Fine and Applied Arts,1
+2018.0,Faculty of Medicine,162
+2019.0,Faculty of Veterinary Science,72
+2022.0,Faculty of Communication Arts,1
+2023.0,Faculty of Medicine,169
+2023.0,Center of Excellence on Hazardous Substance Management,2
+2021.0,Faculty of Commerce and Accountancy,10
+2022.0,Faculty of Medicine,324
+2022.0,School of Agricultural Resources,1
+2019.0,Faculty of Education,2
+2023.0,Faculty of Communication Arts,3
+2023.0,Graduate School,52
+2022.0,Graduate School,115
+2022.0,Transportation Institute,1
+2023.0,Faculty of Political Science,4
+2022.0,Faculty of Veterinary Science,107
+2018.0,Faculty of Veterinary Science,72
+2020.0,Faculty of Arts,3
+2023.0,Transportation Institute,7
+2023.0,Faculty of Fine and Applied Arts,1
+2022.0,Faculty of Nursing,11
+2022.0,Faculty of Architecture,7
+2020.0,College of Population Studies,3
+2023.0,Energy Research Institute,3
+2020.0,Faculty of Commerce and Accountancy,19
+2018.0,Energy Research Institute,1
+2018.0,Faculty of Nursing,5
+2018.0,Institute of Asian Studies,2
+2019.0,Institute of Asian Studies,4
+2023.0,College of Population Studies,9
+2019.0,Faculty of Architecture,1
+2020.0,Faculty of Allied Health Sciences,30
+2022.0,Faculty of Engineering,219
+2020.0,College of Public Health Sciences,19
+2021.0,Faculty of Sports Science,6
+2021.0,Faculty of Law,1
+2021.0,Faculty of Medicine,265
