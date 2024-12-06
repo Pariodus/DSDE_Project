@@ -71,7 +71,7 @@ def group_faculty(faculty):
     if re.search(r'law', faculty, re.IGNORECASE):      #นิติ
         return 'Faculty of Law'
     if re.search(r'psychology', faculty, re.IGNORECASE):      #จิตวิทยา
-        return 'Faculty of Faculty of Psychology'
+        return 'Faculty of Psychology'
     if re.search(r'education|educational invention and innovation research unit|bangkok metropolitan administration', faculty, re.IGNORECASE):      #ครุ
         return 'Faculty of Education'
     if re.search(r'age-related inflammation and degeneration research unit|allied|Allied|alied', faculty, re.IGNORECASE):      #สหเวช
