@@ -5,6 +5,8 @@ import plotly.express as px
 from sklearn.cluster import DBSCAN
 import matplotlib.pyplot as plt
 from datetime import datetime
+import seaborn as sns
+import plotly.graph_objects as go
 
 st.set_page_config(page_title="CU Thesis 2013-2023", layout="wide")
 st.title('CU Thesis 2013-2023')
@@ -18,7 +20,7 @@ def load_data():
 # Load data
 data = load_data()
 data = data.sort_values(by=["Year","Faculty"])
-
+data = data.sort_values(by=["Year","Faculty"])
 # Sidebar filters
 st.sidebar.header('Filters')
 
@@ -130,4 +132,7 @@ fig_eiei = px.line(
 # Show the plot in Streamlit
 st.plotly_chart(fig_eiei)
 
-# heat_map = px.
+st.header('Data predicted by Random Forest Model')
+st.image("Figure_1.png", use_container_width=True)
+st.header('Heatmap Thesis numbers in Years')
+st.image("heat.png", use_container_width=True)
