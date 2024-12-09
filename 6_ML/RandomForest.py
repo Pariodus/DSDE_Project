@@ -4,7 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Specify the correct file path to your CSV file
-file_path = r'5_merge/complete_data.csv'  # Replace with your actual file path
+# file_path = r'5_merge/complete_data.csv'  # Replace with your actual file path
+file_path = r'4_data_prep(spark)/spark.csv'
 data = pd.read_csv(file_path)
 
 # Summarize the data by year
