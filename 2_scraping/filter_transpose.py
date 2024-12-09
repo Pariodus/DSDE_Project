@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Correct file path
-file_path = r'2_scaping/transposed_thesis_summary.csv'  # Update this path
+file_path = r'2_scraping/transposed_thesis_summary.csv'  # Update this path
 
 # Check if the file exists
 if not os.path.exists(file_path):
@@ -26,5 +26,5 @@ else:
     
 
     # Save or display the filtered data
-    filtered_data.to_csv('2_scaping/filter_transpose.csv', index=False)
+    filtered_data.to_csv('2_scraping/filter_transpose.csv', index=False)
     print(filtered_data.head())

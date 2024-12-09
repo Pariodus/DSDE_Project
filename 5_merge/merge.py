@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Example DataFrames
-df1 = pd.read_csv('2_scaping/filter_transpose.csv')
+df1 = pd.read_csv('2_scraping/filter_transpose.csv')
 df2 = pd.read_csv('4_data_prep(spark)/spark.csv')
 # Concatenate the DataFrames
 
