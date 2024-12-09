@@ -6,13 +6,13 @@ from sklearn.cluster import DBSCAN
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-st.set_page_config(page_title="Bangkok Airbnb Analysis", layout="wide")
-st.title('Bangkok Airbnb Listings Analysis')
+st.set_page_config(page_title="CU Thesis 2013-2023", layout="wide")
+st.title('CU Thesis 2013-2023')
 
 # Load and prepare data
 @st.cache_data
 def load_data():
-    data = pd.read_csv('data_locate.csv')
+    data = pd.read_csv('../5_merge/data_locate.csv')
     return data
 
 # Load data
@@ -58,7 +58,7 @@ MAP_STYLES = {
 }
 
 # Price Distribution
-st.header('Price Distribution')
+st.header('Thesis Heatmap in CU')
 
 # Create cluster layer
 # Define a layer to display on a map
@@ -94,12 +94,13 @@ with col1:
         x='Faculty',    
         y='Count',        
         color='Year',
-        title=f'Distribution of Listings for {selected_faculty} in {year}' if selected_faculty != 'All Faculty' and year != 'All Year' 
-            else f'Distribution of Listings for {selected_faculty if selected_faculty != "All Faculty" else "All Faculties"} in {year if year != "All Year" else "All Years"}',
+        # title=f'Distribution of Listings for {selected_faculty} in {year}' if selected_faculty != 'All Faculty' and year != 'All Year' 
+        #     else f'Distribution of Listings for {selected_faculty if selected_faculty != "All Faculty" else "All Faculties"} in {year if year != "All Year" else "All Years"}',
         labels={'Faculty': 'Faculty', 'Count': 'Number of Listings', 'Year': 'Year'},
         height=700
     )
-
+    st.write(f'### Distribution of Listings for {selected_faculty} in {year}' if selected_faculty != 'All Faculty' and year != 'All Year' 
+            else f'### Distribution of Listings for {selected_faculty if selected_faculty != "All Faculty" else "All Faculties"} in {year if year != "All Year" else "All Years"}')
     # Show the plot in Streamlit
     st.plotly_chart(fig_bar)
 with col2:
@@ -113,15 +114,15 @@ with col2:
 
 
 # Hotspot Analysis
-st.header('Accommodation Hotspot Analysis')
+st.header('List of Thesis numbers in Years')
 fig_eiei = px.line(
     data,  # Use the grouped data with faculty counts
-    x='Faculty',      # x-axis will be the Faculty
-    y='Count',        # y-axis will be the count of listings per faculty
-    color='Year',
-    title=f'Distribution of Listings for {selected_faculty} in {year}' if selected_faculty != 'All Faculty' and year != 'All Year' 
-        else f'Distribution of Listings for {selected_faculty if selected_faculty != "All Faculty" else "All Faculties"} in {year if year != "All Year" else "All Years"}',
-    labels={'Faculty': 'Faculty', 'Count': 'Number of Listings', 'Year': 'Year'},
+    x='Year',
+    y='Count',      # x-axis will be the Faculty# y-axis will be the count of listings per faculty
+    color='Faculty',
+    # title=f'Distribution of Listings for {selected_faculty} in {year}' if selected_faculty != 'All Faculty' and year != 'All Year' 
+    #     else f'Distribution of Listings for {selected_faculty if selected_faculty != "All Faculty" else "All Faculties"} in {year if year != "All Year" else "All Years"}',
+    labels={'Count': 'Number of Listings','Year': 'Year','Faculty': 'Faculty'},
     height=700
 )
 
