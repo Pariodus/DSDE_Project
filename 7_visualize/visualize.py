@@ -17,6 +17,7 @@ def load_data():
 
 # Load data
 data = load_data()
+data = data.sort_values(by=["Year","Faculty"])
 
 # Sidebar filters
 st.sidebar.header('Filters')
@@ -128,3 +129,5 @@ fig_eiei = px.line(
 
 # Show the plot in Streamlit
 st.plotly_chart(fig_eiei)
+
+# heat_map = px.
