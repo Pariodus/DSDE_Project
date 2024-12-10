@@ -6,7 +6,9 @@ from sklearn.cluster import DBSCAN
 import matplotlib.pyplot as plt
 from datetime import datetime
 import seaborn as sns
-import plotly.graph_objects as go
+import numpy as np
+from sklearn.ensemble import RandomForestRegressor
+
 
 st.set_page_config(page_title="CU Thesis 2013-2023", layout="wide")
 st.title('CU Thesis 2013-2023')
@@ -20,7 +22,6 @@ def load_data():
 # Load data
 data = load_data()
 data = data.sort_values(by=["Year","Faculty"])
-data = data.sort_values(by=["Year","Faculty"])
 # Sidebar filters
 st.sidebar.header('Filters')
 
@@ -32,7 +33,7 @@ year = st.sidebar.selectbox("Select Year", options=['All Year', 2013, 2014, 2015
 
 
 # Filter data based on selected faculty and year
-filtered_data = data
+filtered_data = data.sort_values(by=["Year","Faculty"])
 
 # Filter by faculty if one is selected
 if selected_faculty != 'All Faculty':
@@ -43,7 +44,9 @@ if year != 'All Year':
     filtered_data = filtered_data[filtered_data['Year'] == year]
 
 # Group by Faculty and Year, summing the 'Count' for each group
-faculty_year_counts = filtered_data.groupby(['Faculty', 'Year'], as_index=False)['Count'].sum()
+faculty_year_counts = filtered_data.groupby(['Year', 'Faculty'], as_index=False)['Count'].sum()
+
+faculty_year_counts = faculty_year_counts.sort_values(by=["Year","Faculty"])
 
 # Map style selection
 map_style = st.sidebar.selectbox(
@@ -109,6 +112,7 @@ with col1:
 with col2:
     # cluster_stats = df.groupby('Cluster', observed=True)[feature_names].agg(['mean', 'std']).round(2)
     # Group by Faculty and Year, summing the 'Count' for each group
+    filtered_data['Year'] = data['Year'].replace(',', '', regex=True).astype(float).astype(int).astype(str)
     faculty_year_counts = filtered_data.groupby(['Faculty', 'Year'], as_index=False)['Count'].sum()
 
     # Show grouped data in a table
@@ -132,7 +136,54 @@ fig_eiei = px.line(
 # Show the plot in Streamlit
 st.plotly_chart(fig_eiei)
 
-st.header('Data predicted by Random Forest Model')
-st.image("Figure_1.png", use_container_width=True)
-st.header('Heatmap Thesis numbers in Years')
-st.image("heat.png", use_container_width=True)
+st.header('Random Forest Prediction of Thesis Counts')
+data_summary = data.groupby('Year')['Count'].sum().reset_index()
+
+# Convert Year back to integers for prediction
+data_summary['Year'] = data_summary['Year'].astype(int)
+
+X = data_summary['Year'].values.reshape(-1, 1)
+y = data_summary['Count'].values
+
+rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
+rf_model.fit(X, y)
+
+future_years = np.arange(data_summary['Year'].max() + 1, data_summary['Year'].max() + 11).reshape(-1, 1)
+future_predictions = rf_model.predict(future_years)
+
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.scatter(X, y, color='blue', label='Actual Data')
+ax.plot(X, rf_model.predict(X), color='red', label='Random Forest Fit')
+ax.scatter(future_years, future_predictions, color='green', label='Predicted Data')
+ax.set_xlabel('Year')
+ax.set_ylabel('Total Count of Theses')
+ax.set_title('Random Forest: Thesis Count Prediction')
+ax.legend()
+ax.grid(True)
+plt.tight_layout()
+
+st.pyplot(fig)
+
+future_data = pd.DataFrame({
+    'Year': future_years.flatten(),
+    'Predicted Count': future_predictions
+})
+
+
+# Heatmap of Thesis Numbers
+st.header('Heatmap of Thesis Counts by Faculty and Year')
+
+# Aggregate data for the heatmap
+locate_data = pd.read_excel("../5_merge/faculty_location.xlsx")
+df = pd.merge(data, locate_data, on="Faculty")
+heatmap_data = df.groupby(['Faculty', 'Year'])['Count'].sum().unstack(fill_value=0)
+
+fig, ax = plt.subplots(figsize=(12, 8))
+sns.heatmap(heatmap_data, annot=True, fmt="d", cmap="YlGnBu", linewidths=0.5, ax=ax)
+ax.set_title("Heatmap of Thesis Counts by Faculty and Year")
+ax.set_xlabel("Year")
+ax.set_ylabel("Faculty")
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+st.pyplot(fig)
