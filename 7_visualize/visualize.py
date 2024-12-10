@@ -16,7 +16,7 @@ st.title('CU Thesis 2013-2023')
 # Load and prepare data
 @st.cache_data
 def load_data():
-    data = pd.read_csv('../5_merge/data_locate.csv')
+    data = pd.read_csv('5_merge/data_locate.csv')
     return data
 
 # Load data
@@ -174,7 +174,7 @@ future_data = pd.DataFrame({
 st.header('Heatmap of Thesis Counts by Faculty and Year')
 
 # Aggregate data for the heatmap
-locate_data = pd.read_excel("../5_merge/faculty_location.xlsx")
+locate_data = pd.read_excel("5_merge/faculty_location.xlsx")
 df = pd.merge(data, locate_data, on="Faculty")
 heatmap_data = df.groupby(['Faculty', 'Year'])['Count'].sum().unstack(fill_value=0)
 
